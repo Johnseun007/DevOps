@@ -1,0 +1,8 @@
+ [local]
+ Localhost ansible_connection=local
+ [dev] 
+ ip-172-31-37-86.us-east-2.compute.internal port=7743
+ [puppet]
+ ip-172-31-11-242.us-east-2.compute.internal
+ [dev:vars]
+  version = "2.0.0"
