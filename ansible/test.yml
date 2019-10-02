@@ -1,0 +1,11 @@
+---
+hosts: all
+tasks:
+  name: find uptime value
+  shell: uptime
+- debug
+tasks:
+  name: find RAM
+  shell: df -h
+- debug
+

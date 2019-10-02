@@ -1,0 +1,19 @@
+---
+ - hosts: "{{ group_name }}"
+   vars: 
+     env: staging
+     data: 0023
+     release: 2.0
+   tasks:   
+   - debug: 
+      msg: "{{ env }} {{ data }}"
+   - name: configure templates file
+     template:
+      src: "{{item}}.j2"
+      dest: "/etc/{{item}}.j2"
+     become: true
+     loop: 
+       - my_app/conf
+       - my_app/release
+   
+
