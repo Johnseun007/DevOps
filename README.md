@@ -1,3 +1,4 @@
+
 Role Name
 =========
 
@@ -46,3 +47,6 @@ Author Information
 
 An optional section for the role authors to include contact information, or a
 website (HTML is not allowed).
+=======
+# DevOps
+>>>>>>> aa8f484e73a4257c5913c628fb5d80d2c598f813
